@@ -25,7 +25,19 @@ export default function Products({ cart, addToCart }) {
                   <span className="text-3xl">
                     <img src={product.icon} alt={product.name} className="w-12 h-12" />
                   </span>
-                  <span className={`badge badge-${product.tagType === 'best-seller' ? 'secondary' : product.tagType === 'popular' ? 'accent' : 'info'}`}>
+                  <span 
+                    className={`px-3 py-1 text-xs font-semibold rounded-full ${
+                      product.tagType === 'best-seller' 
+                        ? 'bg-[#FEF3C6] text-yellow-800' 
+                        : product.tagType === 'popular' 
+                        ? 'bg-[#E1E7FF]' 
+                        : 'bg-[#DBFCE7] text-green-800'
+                    } ${
+                      product.tagType === 'popular' 
+                        ? 'bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent' 
+                        : ''
+                    }`}
+                  >
                     {product.tag}
                   </span>
                 </div>

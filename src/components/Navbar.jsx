@@ -21,7 +21,13 @@ export default function Navbar({ cartCount, cart, removeFromCart }) {
   return (
     <div className="navbar bg-base-100 shadow-sm px-6 py-4 sticky top-0 z-50">
       <div className="navbar-start">
-        <a href="#home" className="text-xl font-bold" onClick={() => handleNavClick('home')}>DigiTools</a>
+        <a 
+          href="#home" 
+          className="text-xl font-bold bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent"
+          onClick={() => handleNavClick('home')}
+        >
+          DigiTools
+        </a>
       </div>
       
       <div className="navbar-center hidden lg:flex">
@@ -29,8 +35,8 @@ export default function Navbar({ cartCount, cart, removeFromCart }) {
           <li><a href="#products" className="link link-hover" onClick={() => handleNavClick('products')}>Products</a></li>
           <li><a href="#features" className="link link-hover" onClick={() => handleNavClick('features')}>Features</a></li>
           <li><a href="#pricing" className="link link-hover" onClick={() => handleNavClick('pricing')}>Pricing</a></li>
-          <li><a href="#steps" className="link link-hover" onClick={() => handleNavClick('steps')}>How It Works</a></li>
-          <li><a href="#footer" className="link link-hover" onClick={() => handleNavClick('footer')}>Contact</a></li>
+          <li><a href="#steps" className="link link-hover" onClick={() => handleNavClick('steps')}>Testimonials</a></li>
+          <li><a href="#footer" className="link link-hover" onClick={() => handleNavClick('footer')}>FAQ</a></li>
         </ul>
       </div>
       
@@ -98,8 +104,16 @@ export default function Navbar({ cartCount, cart, removeFromCart }) {
         </div>
         
         <div className="hidden lg:flex gap-2">
-          <button className="btn btn-outline btn-sm">Login</button>
-          <button className="btn btn-primary btn-sm">Get Started</button>
+          <button className="btn btn-ghost btn-sm text-gray-700 hover:bg-gray-100">Login</button>
+          <button 
+            className="btn btn-sm rounded-full text-white font-medium transition-all duration-200 hover:shadow-lg"
+            style={{
+              background: 'linear-gradient(135deg, #8B5CF6 0%, #4F39F6 100%)',
+              border: 'none'
+            }}
+          >
+            Get Started
+          </button>
         </div>
       </div>
       
@@ -110,12 +124,20 @@ export default function Navbar({ cartCount, cart, removeFromCart }) {
             <li><a href="#products" className="link link-hover" onClick={() => handleNavClick('products')}>Products</a></li>
             <li><a href="#features" className="link link-hover" onClick={() => handleNavClick('features')}>Features</a></li>
             <li><a href="#pricing" className="link link-hover" onClick={() => handleNavClick('pricing')}>Pricing</a></li>
-            <li><a href="#steps" className="link link-hover" onClick={() => handleNavClick('steps')}>How It Works</a></li>
-            <li><a href="#footer" className="link link-hover" onClick={() => handleNavClick('footer')}>Contact</a></li>
+            <li><a href="#steps" className="link link-hover" onClick={() => handleNavClick('steps')}>Testimonials</a></li>
+            <li><a href="#footer" className="link link-hover" onClick={() => handleNavClick('footer')}>FAQ</a></li>
             <div className="divider my-2"></div>
             <div className="flex gap-2">
-              <button className="btn btn-outline btn-sm flex-1">Login</button>
-              <button className="btn btn-primary btn-sm flex-1">Get Started</button>
+              <button className="btn btn-ghost btn-sm flex-1 text-gray-700 hover:bg-gray-100">Login</button>
+              <button 
+                className="btn btn-sm flex-1 rounded-full text-white font-medium transition-all duration-200 hover:shadow-lg"
+                style={{
+                  background: 'linear-gradient(135deg, #8B5CF6 0%, #4F39F6 100%)',
+                  border: 'none'
+                }}
+              >
+                Get Started
+              </button>
             </div>
           </ul>
         </div>
