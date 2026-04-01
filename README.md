@@ -128,7 +128,7 @@ DigiTools-Platform/
 
 ## 🌐 Live Demo দেখুন
 
-Live demo দেখতে এখানে ভিজিট করুন: [DigiTools Platform](https://mdsadrulhasandiderb13assignment6.netlify.app/)
+Live demo দেখতে এখানে ভিজিট করুন: [DigiTools Platform](https://mdsadrulhasandiderb13-a6digitools.netlify.app/)
 
 ## 📱 Responsive Design
 
@@ -176,3 +176,4 @@ Application টি fully responsive এবং সব devices এ কাজ ক�
 ---
 
 **❤️ দিয়ে React & Vite দিয়ে তৈরি** in your project.
+
