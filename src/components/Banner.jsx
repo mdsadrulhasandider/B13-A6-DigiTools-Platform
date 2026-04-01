@@ -1,6 +1,6 @@
 export default function Banner() {
   return (
-    <div className="hero bg-base-100 text-base-content py-20">
+    <section id="home" className="hero bg-base-100 text-base-content py-20">
       <div className="hero-content flex-col lg:flex-row-reverse items-center justify-between max-w-7xl mx-auto">
         <div className="flex-1 flex justify-center lg:justify-end mb-8 lg:mb-0">
           <img
@@ -31,6 +31,6 @@ export default function Banner() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

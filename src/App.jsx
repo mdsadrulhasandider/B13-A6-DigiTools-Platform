@@ -32,19 +32,29 @@ function App() {
   return (
     <div className="min-h-screen bg-base-100">
       <ToastContainer />
-      <Navbar cartCount={cart.length} />
-      <Banner />
-      <Stats />
-      <MainSection
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-        cart={cart}
-        addToCart={addToCart}
-        removeFromCart={removeFromCart}
-        clearCart={clearCart}
-      />
-      <Steps />
-      <Pricing />
+      <Navbar cartCount={cart.length} cart={cart} removeFromCart={removeFromCart} />
+      <section id="home">
+        <Banner />
+      </section>
+      <section id="features">
+        <Stats />
+      </section>
+      <section id="products">
+        <MainSection
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          cart={cart}
+          addToCart={addToCart}
+          removeFromCart={removeFromCart}
+          clearCart={clearCart}
+        />
+      </section>
+      <section id="steps">
+        <Steps />
+      </section>
+      <section id="pricing">
+        <Pricing />
+      </section>
       <section
         className="py-16"
         style={{ background: 'linear-gradient(135deg, #5B4BFF 0%, #8B2BFF 100%)' }}
@@ -86,7 +96,9 @@ function App() {
           </p>
         </div>
       </section>
-      <Footer />
+      <section id="footer">
+        <Footer />
+      </section>
     </div>
   )
 }
