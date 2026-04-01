@@ -51,7 +51,7 @@ export default function Cart({ cart, removeFromCart, clearCart }) {
                 </div>
               </div>
               <button
-                className="btn btn-ghost btn-sm text-error"
+                className="btn btn-ghost btn-sm text-error rounded-full"
                 onClick={() => handleRemove(item.id, item.name)}
               >
                 Remove
@@ -59,13 +59,20 @@ export default function Cart({ cart, removeFromCart, clearCart }) {
             </div>
           </div>
         ))}
-        <div className="card bg-base-200 shadow-sm">
+        <div className="card bg-white shadow-sm border">
           <div className="card-body p-6">
             <div className="flex justify-between items-center mb-4">
               <span className="text-xl font-semibold">Total:</span>
               <span className="text-2xl font-bold text-primary">${total}</span>
             </div>
-            <button className="btn btn-primary btn-block" onClick={handleCheckout}>
+            <button 
+              className="btn btn-block rounded-full text-white font-medium transition-all duration-200 hover:shadow-lg"
+              style={{
+                background: 'linear-gradient(135deg, #8B5CF6 0%, #4F39F6 100%)',
+                border: 'none'
+              }}
+              onClick={handleCheckout}
+            >
               Proceed to Checkout
             </button>
           </div>
