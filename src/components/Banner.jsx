@@ -4,7 +4,7 @@ export default function Banner() {
       <div className="hero-content flex-col lg:flex-row-reverse items-center justify-between max-w-7xl mx-auto">
         <div className="flex-1 flex justify-center lg:justify-end mb-8 lg:mb-0">
           <img
-            src="/assets/images/banner.png"
+            src="/assets/banner.png"
             className="rounded-lg w-full"
             style={{ width: '500px', height: '590px' }}
             alt="Digital workflow illustration"
