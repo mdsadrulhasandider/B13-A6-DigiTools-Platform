@@ -128,7 +128,7 @@ DigiTools-Platform/
 
 ## 🌐 Live Demo দেখুন
 
-Live demo দেখতে এখানে ভিজিট করুন: [DigiTools Platform](https://mdsadrulhasandider.github.io/B13-A6-DigiTools-Platform/)
+Live demo দেখতে এখানে ভিজিট করুন: [DigiTools Platform](https://mdsadrulhasandiderb13assignment6.netlify.app/)
 
 ## 📱 Responsive Design
 
@@ -164,7 +164,7 @@ Application টি fully responsive এবং সব devices এ কাজ ক�
 - **GitHub**: [@mdsadrulhasandider](https://github.com/mdsadrulhasandider)
 - **Project**: [B13-A6-DigiTools-Platform](https://github.com/mdsadrulhasandider/B13-A6-DigiTools-Platform)
 
-## 🙏 Acknowledgments
+## � Acknowledgments
 
 - [React](https://reactjs.org/) - Web এবং native user interfaces এর library
 - [Vite](https://vitejs.dev/) - Next generation frontend tooling
